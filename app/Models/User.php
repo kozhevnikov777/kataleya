@@ -12,6 +12,17 @@ class User extends Authenticatable
 {
     use HasApiTokens, HasFactory, Notifiable;
 
+    const ROLE_ADMIN = 1;
+    const ROLE_READER = 0;
+
+    public static function getRoles()
+    {
+        return [
+            self::ROLE_ADMIN => 'Админ',
+            self::ROLE_READER => 'Читатель',
+        ];
+    }
+
     /*
 
     Для реализации пола
@@ -43,6 +54,7 @@ class User extends Authenticatable
         'age',
         'gender',
         'address',
+        'role',
     ];
     /**
      * The attributes that should be hidden for serialization.

@@ -53,6 +53,7 @@
                             <div class="row g-0 holder">
                                 <div class="col-12">
                                     <div class="some-info">
+
                                         <p class="d-flex align-items-center"> <span class="icon"> <i
                                                     class="flaticon-power"></i> </span> Welcome to Karte Online Shop</p>
                                         <div class="right d-flex align-items-center ">
