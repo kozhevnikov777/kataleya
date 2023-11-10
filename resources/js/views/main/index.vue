@@ -2,7 +2,8 @@
     <div>
         <main class="overflow-hidden">
 
-<!-- newsLetter_popup Start -->
+<!-- popup при переходе на главную
+
 <button data-mfp-src="#newsLetter-popup" class="modal-btn d-none"></button>
 <div id="newsLetter-popup" class="mfp-hide p-4" role="dialog">
     <div class="row align-items-center justify-content-sm-between">
@@ -29,6 +30,8 @@
         </div>
     </div>
 </div>
+
+-->
 
 
 <!-- Start Main Slider -->

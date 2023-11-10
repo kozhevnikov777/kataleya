@@ -35,9 +35,9 @@
                                 </form>
                             </div>
                             <ul class="page-dropdown-menu">
-                                <li class="dropdown-list"> <router-link to="/"> <span>Home </span> </router-link>
+                                <li class="dropdown-list"> <router-link to="/"> <span>Главная </span> </router-link>
                                 </li>
-                                <li class="dropdown-list"> <router-link to="/products"> <span>Product </span> </router-link>
+                                <li class="dropdown-list"> <router-link to="/products"> <span>Товары </span> </router-link>
                                 </li>
                             </ul>
                         </div>
@@ -53,20 +53,9 @@
                             <div class="row g-0 holder">
                                 <div class="col-12">
                                     <div class="some-info">
-
-                                        <p class="d-flex align-items-center"> <span class="icon"> <i
-                                                    class="flaticon-power"></i> </span> Welcome to Karte Online Shop</p>
+                                        <p class="d-flex align-items-center">Добро пожаловать в студию цветов Каталея</p>
                                         <div class="right d-flex align-items-center ">
-                                            <div class="language currency"> <select>
-                                                    <option>USD</option>
-                                                    <option value="1">INR</option>
-                                                    <option value="2">BDT</option>
-                                                </select> </div>
-                                            <div class="language two"> <select>
-                                                    <option>ENGLISH </option>
-                                                    <option value="1">GERMAN</option>
-                                                    <option value="4">FRENCH</option>
-                                                </select> </div> <a href="login.html"> Sign In / Register </a>
+                                            <!-- <a href="login.html"> Sign In / Register </a> -->
                                         </div>
                                     </div>
                                 </div>
@@ -79,9 +68,9 @@
                                             <nav>
                                                 <ul
                                                     class="page-dropdown-menu d-flex align-items-center justify-content-center">
-                                                    <li class="dropdown-list"><router-link to="/"><span>Home</span></router-link>
+                                                    <li class="dropdown-list"><router-link to="/"><span>Главная</span></router-link>
                                                     </li>
-                                                    <li class="dropdown-list"> <router-link to="/products"> <span>Product </span> </router-link>
+                                                    <li class="dropdown-list"> <router-link to="/products"> <span>Товары </span> </router-link>
                                                     </li>
                                                 </ul>
                                             </nav>
@@ -89,14 +78,9 @@
 
                                             <div class="right d-flex align-items-center justify-content-end">
                                                 <ul class="main-menu__widge-box d-flex align-items-center ">
-                                                    <li class="d-lg-block d-none"><a href="my-account.html"><i
-                                                                class="flaticon-user"></i> </a></li>
-                                                    <li class="d-lg-block d-none"><a href="wishlist.html"
-                                                            class="number"><i class="flaticon-heart"></i> <span
-                                                                class="count">(2)</span> </a> </li>
-                                                    <li class="cartm"> <a href="#0" class="number cart-icon"> <i
-                                                                class="flaticon-shopping-cart"></i><span
-                                                                class="count">(5)</span> </a> </li>
+                                                    <li class="cartm"> <router-link to="/cart"> <a href="#0" class="number cart-icon">
+                                                        <strong><i class="flaticon-shopping-cart"></i></strong>
+                                                        <span class="count"></span> </a> </router-link> </li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -139,9 +123,9 @@
                                 <nav>
                                     <ul
                                         class="page-dropdown-menu d-flex align-items-center justify-content-center">
-                                        <li class="dropdown-list"> <router-link to="/"> <span>Home</span> </router-link>
+                                        <li class="dropdown-list"> <router-link to="/"> <span>Главная</span> </router-link>
                                         </li>
-                                        <li class="dropdown-list"> <router-link to="/products"> <span>Product </span> </router-link>
+                                        <li class="dropdown-list"> <router-link to="/products"> <span>Товары </span> </router-link>
                                         </li>
                                     </ul>
                                 </nav>
@@ -152,81 +136,6 @@
                 </div>
             </div>
         </div>
-        <div class="side-cart-closer"></div>
-        <div class="side-cart d-flex flex-column justify-content-between">
-            <div class="top">
-                <div class="content d-flex justify-content-between align-items-center">
-                    <h6 class="text-uppercase">Your Cart (03)</h6> <span class="cart-close text-uppercase">X</span>
-                </div>
-                <div class="cart_items">
-                    <div class="items d-flex justify-content-between align-items-center">
-                        <div class="left d-flex align-items-center"> <a href="shop-details-1.html"
-                                class="thumb d-flex justify-content-between align-items-center"> <img
-                                    src="assets/images/shop/products-img1.jpg" alt=""> </a>
-                            <div class="text"> <a href="shop-details-1.html">
-                                    <h6>Diamond Bracelet</h6>
-                                </a>
-                                <p>2 X <span>$350.00</span> </p>
-                            </div>
-                        </div>
-                        <div class="right">
-                            <div class="item-remove"> <i class="flaticon-cross"></i> </div>
-                        </div>
-                    </div>
-                    <div class="items d-flex justify-content-between align-items-center">
-                        <div class="left d-flex align-items-center"> <a href="shop-details-1.html"
-                                class="thumb d-flex justify-content-between align-items-center"> <img
-                                    src="assets/images/shop/products-img2.jpg" alt=""> </a>
-                            <div class="text"> <a href="shop-details-1.html">
-                                    <h6>Blacked Neckles </h6>
-                                </a>
-                                <p>1 X <span>$150.00</span> </p>
-                            </div>
-                        </div>
-                        <div class="right">
-                            <div class="item-remove"> <i class="flaticon-cross"></i> </div>
-                        </div>
-                    </div>
-                    <div class="items d-flex justify-content-between align-items-center">
-                        <div class="left d-flex align-items-center"> <a href="shop-details-1.html"
-                                class="thumb d-flex justify-content-between align-items-center"> <img
-                                    src="assets/images/shop/products-img3.jpg" alt=""> </a>
-                            <div class="text"> <a href="shop-details-1.html">
-                                    <h6>Diamond Ring </h6>
-                                </a>
-                                <p>1 X <span>$200.00</span> </p>
-                            </div>
-                        </div>
-                        <div class="right">
-                            <div class="item-remove"> <i class="flaticon-cross"></i> </div>
-                        </div>
-                    </div>
-                    <div class="items d-flex justify-content-between align-items-center">
-                        <div class="left d-flex align-items-center"> <a href="shop-details-2.html"
-                                class="thumb d-flex justify-content-between align-items-center"> <img
-                                    src="assets/images/shop/products-img4.jpg" alt=""> </a>
-                            <div class="text"> <a href="shop-details-1.html">
-                                    <h6>Women Earring</h6>
-                                </a>
-                                <p>1 X <span>$150.00</span> </p>
-                            </div>
-                        </div>
-                        <div class="right">
-                            <div class="item-remove"> <i class="flaticon-cross"></i> </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="bottom">
-                <div class="total-ammount d-flex justify-content-between align-items-center">
-                    <h6 class="text-uppercase">Total:</h6>
-                    <h6 class="ammount text-uppercase">$850.00</h6>
-                </div>
-                <div class="button-box d-flex justify-content-between"> <router-link to="/cart"> <span class="btn_black">View Cart</span> </router-link>
-                    <a href="cart.html" class="button-2 btn_theme"> Chekout </a> </div>
-            </div>
-        </div>
-        <div class="sidebar-content-closer"></div>
         <div class="sidebar-content">
             <div class="sidebar-widget-container">
                 <div class="widget-heading d-flex justify-content-end align-content-center"> <span

@@ -7,12 +7,12 @@
                 <div class="row">
                     <div class="col-xl-12">
                         <div class="breadcrumb-content pb-60 text-center wow fadeInUp animated">
-                            <h2>Shop Grid</h2>
+                            <h2>Товары</h2>
                             <div class="breadcrumb-menu">
                                 <ul>
-                                    <li><a href="index.html"><i class="flaticon-home pe-2"></i>Home</a></li>
+                                    <li><a href="index.html"><i class="flaticon-home pe-2"></i>Главная</a></li>
                                     <li> <i class="flaticon-next"></i> </li>
-                                    <li class="active">Shop Grid</li>
+                                    <li class="active">Товары</li>
                                 </ul>
                             </div>
                         </div>
@@ -29,51 +29,51 @@
                         <div class="product-categories-one__inner">
                             <ul>
                                 <li> <a href="#0" class="img-box">
-                                        <div class="inner"> <img src="src/assets/images/shop/product-categories-v1-img1.png"
+                                        <div class="inner"> <img src="/assets/images/shop/product-categories-v1-img1.png"
                                                 alt="" /> </div>
                                     </a>
                                     <div class="title"> <a href="#0">
-                                            <h6>Accessories</h6>
+                                            <h6>Цветы</h6>
                                         </a> </div>
                                 </li>
                                 <li> <a href="#0" class="img-box">
-                                        <div class="inner"> <img src="src/assets/images/shop/product-categories-v1-img2.png"
+                                        <div class="inner"> <img src="/assets/images/shop/product-categories-v1-img2.png"
                                                 alt="" /> </div>
                                     </a>
                                     <div class="title"> <a href="#0">
-                                            <h6>Furnitures</h6>
+                                            <h6>Букеты</h6>
                                         </a> </div>
                                 </li>
                                 <li> <a href="#0" class="img-box">
-                                        <div class="inner"> <img src="src/assets/images/shop/product-categories-v1-img3.png"
+                                        <div class="inner"> <img src="/assets/images/shop/product-categories-v1-img3.png"
                                                 alt="" /> </div>
                                     </a>
                                     <div class="title"> <a href="#0">
-                                            <h6>Jewellery</h6>
+                                            <h6>Аксессуары</h6>
                                         </a> </div>
                                 </li>
                                 <li> <a href="#0" class="img-box">
-                                        <div class="inner"> <img src="src/assets/images/shop/product-categories-v1-img4.png"
+                                        <div class="inner"> <img src="/assets/images/shop/product-categories-v1-img4.png"
                                                 alt="" /> </div>
                                     </a>
                                     <div class="title"> <a href="#0">
-                                            <h6>Shoes</h6>
+                                            <h6>Подарки</h6>
                                         </a> </div>
                                 </li>
                                 <li> <a href="#0" class="img-box">
-                                        <div class="inner"> <img src="src/assets/images/shop/product-categories-v1-img5.png"
+                                        <div class="inner"> <img src="/assets/images/shop/product-categories-v1-img5.png"
                                                 alt="" /> </div>
                                     </a>
                                     <div class="title"> <a href="#0">
-                                            <h6>Electronics</h6>
+                                            <h6>Вазы</h6>
                                         </a> </div>
                                 </li>
                                 <li> <a href="#0" class="img-box">
-                                        <div class="inner"> <img src="src/assets/images/shop/product-categories-v1-img6.png"
+                                        <div class="inner"> <img src="/assets/images/shop/product-categories-v1-img6.png"
                                                 alt="" /> </div>
                                     </a>
                                     <div class="title"> <a href="#0">
-                                            <h6>Fashion</h6>
+                                            <h6>Конфеты</h6>
                                         </a> </div>
                                 </li>
                             </ul>
@@ -98,7 +98,7 @@
                                 </form>
                                 <div class="single-sidebar-box mt-30 wow fadeInUp animated ">
                                     <!-- Сортировка по категориям -->
-                                    <h4>Select Categories</h4>
+                                    <h4>Выберите категории</h4>
                                     <div class="checkbox-item">
                                         <form>
                                             <div v-for="category in filterList.categories" class="form-group">
@@ -110,35 +110,41 @@
                                 </div>
                                 <!-- Сортировка по цветам -->
                                 <div class="single-sidebar-box mt-30 wow fadeInUp animated">
-                                    <h4>Color Option </h4>
-                                    <ul class="color-option">
-                                        <li v-for="color in filterList.colors">
-                                            <a @click.prevent="addColor(color.id)" href="#0" class="color-option-single"
-                                            :style="`background: #${color.title} ;`"
-                                            ><span> {{ color.title }}</span></a>
-                                        </li>
-                                    </ul>
+                                    <h4>Варианты цветов </h4>
+                                    <div class="checkbox-color">
+                                        <form class="color-filter">
+                                            <div v-for="color in filterList.colors" class="color-filter-single" :style="`background: #${color.title} ;`">
+                                                <input :value="color.id" v-model="colors" type="checkbox" :id="color.id">
+                                                <label :for="color.id"><p :style="`background: #${color.title} ;`"></p></label>
+                                            </div>
+                                        </form>
+                                    </div>
                                 </div>
                                 <!-- Сортировка по стоимости -->
                                 <div class="single-sidebar-box mt-30 wow fadeInUp animated">
-                                    <h4>Filter By Price</h4>
+                                    <h4>Филтр по цене</h4>
                                     <div class="slider-box">
                                         <div id="price-range" class="slider"></div>
                                         <div class="output-price"> <label for="priceRange">Price:</label> <input
                                                 type="text" id="priceRange" readonly> </div>
-                                                <button @click.prevent="FilterProducts" class="filterbtn"
-                                                    type="submit"> Filter
-                                                </button>
+
                                     </div>
                                 </div>
                                 <!-- Сортировка по тегам -->
                                 <div class="single-sidebar-box mt-30 wow fadeInUp animated pb-0 border-bottom-0 ">
-                                    <h4>Tags </h4>
+                                    <h4>Теги </h4>
                                     <ul class="popular-tag">
                                         <li v-for="tag in filterList.tags">
                                             <a @click.prevent="addTag(tag.id)" href="#0">{{ tag.title }}</a>
                                         </li>
                                     </ul>
+                                </div>
+                                <div class="single-sidebar-box mt-30 wow fadeInUp animated pb-0 border-bottom-0">
+                                    <div class="slider-box">
+                                        <button @click.prevent="FilterProducts" class="filterbtn"
+                                                type="submit"> Применить филтры
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
